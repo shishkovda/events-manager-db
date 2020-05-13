@@ -3,7 +3,7 @@ create table users
     id           integer not null
         constraint users_pk
             primary key,
-    login        varchar not null,
+    username        varchar not null,
     password     varchar,
     first_name   varchar,
     last_name    varchar,
@@ -15,8 +15,8 @@ create table users
 alter table users
     owner to postgres;
 
-create unique index users_login_uindex
-    on users (login);
+create unique index users_username_uindex
+    on users (username);
 
 
 create table events
