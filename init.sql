@@ -9,7 +9,8 @@ create table users
     last_name    varchar,
     email        varchar,
     phone_number varchar,
-    card_number  varchar
+    card_number  varchar,
+    enabled boolean
 );
 
 alter table users
