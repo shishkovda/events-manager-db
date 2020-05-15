@@ -1,3 +1,12 @@
+CREATE TABLE public.aliases
+(
+    alias character varying COLLATE pg_catalog."default" NOT NULL,
+    lastname character varying COLLATE pg_catalog."default" NOT NULL
+)
+
+ALTER TABLE public.aliases
+    OWNER to postgres;
+
 create table users
 (
     id           integer not null
